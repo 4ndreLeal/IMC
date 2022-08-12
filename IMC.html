@@ -1,0 +1,30 @@
+<meta charset="utf-8">
+
+<script>
+function pulaLinha(){
+	document.write("<br>");
+}
+function mostra(mensagem){
+	document.write(mensagem);
+	pulaLinha();
+}
+
+function calculaImc(peso, altura){
+	return peso/(altura*altura);
+}
+
+var peso = prompt("Informe o peso: ");
+var altura = prompt("Informe a altura: ");
+var imc = calculaImc(peso, altura);
+mostra(imc);
+if(imc < 18.5) {
+	mostra("IMC abaixo do ideal");
+}
+if(imc >= 18.5 && imc <= 35) {
+	mostra("IMC ideal");
+}
+if(imc > 35) {
+	mostra("IMC acima do ideal");
+}
+
+</script>
