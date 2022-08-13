@@ -13,8 +13,8 @@ function calculaImc(peso, altura){
 	return peso/(altura*altura);
 }
 
-var peso = prompt("Informe o peso: ");
-var altura = prompt("Informe a altura: ");
+var peso = parseFloat(prompt("Informe o peso: "));
+var altura = parseFloat(prompt("Informe a altura: "));
 var imc = calculaImc(peso, altura);
 mostra(imc);
 if(imc < 18.5) {
